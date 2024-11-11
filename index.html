@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <div id="text-todo">
+            <div id="topic-list"> 
+                <h1>Todo List</h1>
+                <p>Get things done, one item at a time.</p>
+            </div>
+            <div id="task-list" class="task-item">
+                <h4 id="task-text">Learn Vue Js</h4>
+                <div class="icons">
+                    <input type="checkbox" id="checkbox" onchange="toggleTask(this)">
+                    <i class="fa-solid fa-trash" id="delete-icon"></i>
+                </div>
+            </div>
+            <div id="radio-ques">
+                <h5>Move done items to the end?</h5>
+                <div class="icons">
+                    <i class="fa-regular fa-circle-dot"></i>
+                </div>
+            </div>
+            <div id="create-todo">
+                <h3>Add to the Todo List</h3>
+                <div class="add__newlist">
+                    <input type="text" id="new-task-input" placeholder="New task...">
+                    <button id="add-item">ADD ITEM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- <i class="fa-regular fa-square-check"></i> -->

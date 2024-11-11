@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 450px;
+    padding: 20px;
+    background-color: rgb(234, 103, 103);
+    border-radius: 8px;
+    height: 600px;
+}
+
+#text-todo {
+    width: 100%;
+    color: white;
+}
+
+#topic-list h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#topic-list p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid white;
+    max-height: 200px; 
+    overflow-y: scroll; 
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 400px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icons input[type="checkbox"] {
+    accent-color: white;
+}
+
+.fa-trash {
+    cursor: pointer;
+    color: white;
+}
+
+#radio-ques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#create-todo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#create-todo input {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#create-todo button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(234, 103, 103);
+    cursor: pointer;
+}
+
+#create-todo button:hover {
+    background-color: #f0f0f0;
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(255, 255, 255);
+}
